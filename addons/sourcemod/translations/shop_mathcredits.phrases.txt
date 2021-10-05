@@ -1,0 +1,20 @@
+"Phrases"
+{
+	"MathQuestion"
+	{
+		"#format" "{1:d},{2:s},{3:d},{4:d}"
+		"en" "{fullred}[Contest] {white}{1} {2} {3} = ? For right answer get {4} credits!"
+		"ru" "{fullred}[Конкурс] {white}{1} {2} {3} = ? Ответ получите {4} кредита(ов)!"
+	}
+	"Winner"
+	{
+		"#format" "{1:N},{2:d}"
+		"en" "{fullred}[Contest] {white}{1} got {2} credits for winning the contest!"
+		"ru" "{fullred}[Конкурс] {white}{1} получает {2} кредита(ов) за победу в конкурсе!"
+	}
+	"NoAnswer"
+	{
+		"en" "{fullred}[Contest] {white}Time is out, no answer!"
+		"ru" "{fullred}[Конкурс] {white}Время вышло, ответа нет!"
+	}
+}
