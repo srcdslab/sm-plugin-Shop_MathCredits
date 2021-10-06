@@ -2,7 +2,7 @@
 #include <shop>
 #include <sdktools_sound>
 #include <sdktools_stringtables>
-#include <morecolors>
+#include <multicolors>
 #pragma newdecls required
 
 #define PLUS				"+"
