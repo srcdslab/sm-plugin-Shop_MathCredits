@@ -17,8 +17,8 @@ This repository contains a SourcePawn plugin for SourceMod called "Shop_MathCred
 ### Core Technologies
 - **Language**: SourcePawn (.sp files)
 - **Platform**: SourceMod 1.11.0+ (minimum)
-- **Build System**: SourceKnight 0.2
-- **Compiler**: SourcePawn compiler (spcomp) via SourceKnight
+- **Build System**: Native GitHub Actions
+- **Compiler**: SourcePawn compiler (spcomp) via rumblefrog/setup-sp
 
 ### Dependencies
 - **SourceMod**: Core framework (version 1.11.0-git6934)
@@ -36,23 +36,23 @@ addons/sourcemod/
 common/
 └── sound/shop/
     └── Applause.mp3                 # Winner sound effect
-sourceknight.yaml                    # Build configuration
 .github/workflows/ci.yml             # CI/CD pipeline
 ```
 
 ## Build & Development Workflow
 
 ### Prerequisites
-- SourceKnight build system installed
-- Dependencies are automatically downloaded during build
+- None locally required; the build runs entirely in GitHub Actions
 
 ### Building the Plugin
 ```bash
-# The build process is automated via SourceKnight
-# CI runs: uses: maxime1907/action-sourceknight@v1 with cmd: build
-
-# Local development would use:
-sourceknight build
+# The build process is automated via GitHub Actions (.github/workflows/ci.yml):
+# - rumblefrog/setup-sp installs SourceMod 1.12.x's spcomp
+# - MultiColors and Shop-Core includes are cloned from their repos
+# - spcomp compiles addons/sourcemod/scripting/Shop_MathCredits.sp
+#
+# For local development, install spcomp and the same includes manually,
+# then run: spcomp -i include -o ../plugins/Shop_MathCredits.smx Shop_MathCredits.sp
 ```
 
 ### Output
