@@ -32,26 +32,26 @@ public Plugin myinfo =
 	name = "[Shop] Math Credits",
 	author = "Arkarr / Psychologist21 & AlmazON",
 	description = "Mathematical tasks for credits (competition)",
-	version = "1.2.1",
+	version = "1.2.2",
 	url = "http://hlmod.ru"
 };
 
 public void OnPluginStart()
 {
 	ConVar cvar = CreateConVar("sm_MathCredits_minimum_number",				"1",	"Minimum number in math question.");
-	HookConVarChange(cvar,	CVAR_MinimumNumber);
+	cvar.AddChangeHook(CVAR_MinimumNumber);
 	nbrmin = cvar.IntValue;
-	HookConVarChange(cvar = CreateConVar("sm_MathCredits_maximum_number",	"100",	"Maximum number in math question."),	CVAR_MaximumNumber);
+	(cvar = CreateConVar("sm_MathCredits_maximum_number",	"100",	"Maximum number in math question.")).AddChangeHook(CVAR_MaximumNumber);
 	nbrmax = cvar.IntValue;
-	HookConVarChange(cvar = CreateConVar("sm_MathCredits_minimum_credits",	"5",	"The minimum number of credits earned for the correct answer.", _, true, 1.0), CVAR_MinimumCredits);
+	(cvar = CreateConVar("sm_MathCredits_minimum_credits",	"5",	"The minimum number of credits earned for the correct answer.", _, true, 1.0)).AddChangeHook(CVAR_MinimumCredits);
 	mincredits = cvar.IntValue;
-	HookConVarChange(cvar = CreateConVar("sm_MathCredits_maximum_credits",	"100",	"The maximum number of credits earned for a correct answer.", _, true, 1.0), CVAR_MaximumCredits);
+	(cvar = CreateConVar("sm_MathCredits_maximum_credits",	"100",	"The maximum number of credits earned for a correct answer.", _, true, 1.0)).AddChangeHook(CVAR_MaximumCredits);
 	maxcredits = cvar.IntValue;
-	HookConVarChange(cvar = CreateConVar("sm_MathCredits_time_answer_questions",	"15",	"Time in seconds to answer the question.", _, true, 5.0),	CVAR_TimeAnswer);
+	(cvar = CreateConVar("sm_MathCredits_time_answer_questions",	"15",	"Time in seconds to answer the question.", _, true, 5.0)).AddChangeHook(CVAR_TimeAnswer);
 	timeanswer = cvar.FloatValue;
-	HookConVarChange(cvar = CreateConVar("sm_MathCredits_time_minamid_questions",	"100",	"The minimum time in seconds between each question.", _, true, 5.0),	CVAR_MinQuestion);
+	(cvar = CreateConVar("sm_MathCredits_time_minamid_questions",	"100",	"The minimum time in seconds between each question.", _, true, 5.0)).AddChangeHook(CVAR_MinQuestion);
 	minquestion = cvar.FloatValue;
-	HookConVarChange(cvar = CreateConVar("sm_MathCredits_time_maxamid_questions",	"250",	"The maximum time in seconds between each question.", _, true, 10.0),	CVAR_MaxQuestion);
+	(cvar = CreateConVar("sm_MathCredits_time_maxamid_questions",	"250",	"The maximum time in seconds between each question.", _, true, 10.0)).AddChangeHook(CVAR_MaxQuestion);
 	maxquestion = cvar.FloatValue;
 	AutoExecConfig(true);
 	
