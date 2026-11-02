@@ -32,7 +32,7 @@ public Plugin myinfo =
 	name = "[Shop] Math Credits",
 	author = "Arkarr / Psychologist21 & AlmazON",
 	description = "Mathematical tasks for credits (competition)",
-	version = "1.2.2",
+	version = "1.2.3",
 	url = "http://hlmod.ru"
 };
 
