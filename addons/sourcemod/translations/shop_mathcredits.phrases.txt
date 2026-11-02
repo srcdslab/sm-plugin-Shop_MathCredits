@@ -3,18 +3,33 @@
 	"MathQuestion"
 	{
 		"#format" "{1:d},{2:s},{3:d},{4:d}"
-		"en" "{fullred}[Contest] {white}{1} {2} {3} = ? For right answer get {4} credits!"
-		"ru" "{fullred}[Конкурс] {white}{1} {2} {3} = ? Ответ получите {4} кредита(ов)!"
+		"en" "{fullred}[Contest] {white}{1} {2} {3} = ? The right answer earns {4} credits!"
+		"ru" "{fullred}[Конкурс] {white}{1} {2} {3} = ? За правильный ответ получите {4} кредита(ов)!"
+		"fr" "{fullred}[Concours] {white}{1} {2} {3} = ? Bonne réponse : {4} crédits !"
+		"es" "{fullred}[Concurso] {white}{1} {2} {3} = ? ¡La respuesta correcta gana {4} créditos!"
+		"de" "{fullred}[Wettbewerb] {white}{1} {2} {3} = ? Richtige Antwort bringt {4} Credits!"
+		"pt" "{fullred}[Concurso] {white}{1} {2} {3} = ? Resposta certa ganha {4} créditos!"
+		"chi" "{fullred}[竞赛] {white}{1} {2} {3} = ? 答对可得 {4} 积分！"
 	}
 	"Winner"
 	{
 		"#format" "{1:N},{2:d}"
 		"en" "{fullred}[Contest] {white}{1} got {2} credits for winning the contest!"
 		"ru" "{fullred}[Конкурс] {white}{1} получает {2} кредита(ов) за победу в конкурсе!"
+		"fr" "{fullred}[Concours] {white}{1} a gagné {2} crédits en remportant le concours !"
+		"es" "{fullred}[Concurso] {white}¡{1} recibió {2} créditos por ganar el concurso!"
+		"de" "{fullred}[Wettbewerb] {white}{1} hat {2} Credits für den Sieg im Wettbewerb erhalten!"
+		"pt" "{fullred}[Concurso] {white}{1} ganhou {2} créditos por vencer o concurso!"
+		"chi" "{fullred}[竞赛] {white}{1} 赢得了竞赛，获得 {2} 积分！"
 	}
 	"NoAnswer"
 	{
-		"en" "{fullred}[Contest] {white}Time is out, no answer!"
+		"en" "{fullred}[Contest] {white}Time's up, no answer!"
 		"ru" "{fullred}[Конкурс] {white}Время вышло, ответа нет!"
+		"fr" "{fullred}[Concours] {white}Temps écoulé, aucune réponse !"
+		"es" "{fullred}[Concurso] {white}¡Se acabó el tiempo, nadie respondió!"
+		"de" "{fullred}[Wettbewerb] {white}Die Zeit ist um, keine Antwort!"
+		"pt" "{fullred}[Concurso] {white}O tempo acabou, ninguém respondeu!"
+		"chi" "{fullred}[竞赛] {white}时间到，无人答对！"
 	}
 }
