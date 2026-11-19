@@ -10,6 +10,12 @@
 		"de" "{fullred}[Wettbewerb] {white}{1} {2} {3} = ? Richtige Antwort bringt {4} Credits!"
 		"pt" "{fullred}[Concurso] {white}{1} {2} {3} = ? Resposta certa ganha {4} créditos!"
 		"chi" "{fullred}[竞赛] {white}{1} {2} {3} = ? 答对可得 {4} 积分！"
+		"pl" "{fullred}[Konkurs] {white}{1} {2} {3} = ? Poprawna odpowiedź daje {4} kredytów!"
+		"tr" "{fullred}[Yarışma] {white}{1} {2} {3} = ? Doğru cevap {4} kredi kazandırır!"
+		"it" "{fullred}[Concorso] {white}{1} {2} {3} = ? La risposta giusta vale {4} crediti!"
+		"ua" "{fullred}[Конкурс] {white}{1} {2} {3} = ? Правильна відповідь принесе {4} кредит(ів)!"
+		"zho" "{fullred}[競賽] {white}{1} {2} {3} = ? 答對可獲得 {4} 點數！"
+		"cze" "{fullred}[Soutěž] {white}{1} {2} {3} = ? Správná odpověď získá {4} kreditů!"
 	}
 	"Winner"
 	{
@@ -21,6 +27,12 @@
 		"de" "{fullred}[Wettbewerb] {white}{1} hat {2} Credits für den Sieg im Wettbewerb erhalten!"
 		"pt" "{fullred}[Concurso] {white}{1} ganhou {2} créditos por vencer o concurso!"
 		"chi" "{fullred}[竞赛] {white}{1} 赢得了竞赛，获得 {2} 积分！"
+		"pl" "{fullred}[Konkurs] {white}{1} otrzymuje {2} kredytów za wygranie konkursu!"
+		"tr" "{fullred}[Yarışma] {white}{1} yarışmayı kazandığı için {2} kredi kazandı!"
+		"it" "{fullred}[Concorso] {white}{1} ha ricevuto {2} crediti per aver vinto il concorso!"
+		"ua" "{fullred}[Конкурс] {white}{1} отримує {2} кредит(ів) за перемогу в конкурсі!"
+		"zho" "{fullred}[競賽] {white}{1} 贏得競賽，獲得 {2} 點數！"
+		"cze" "{fullred}[Soutěž] {white}{1} získal {2} kreditů za výhru v soutěži!"
 	}
 	"NoAnswer"
 	{
@@ -31,5 +43,11 @@
 		"de" "{fullred}[Wettbewerb] {white}Die Zeit ist um, keine Antwort!"
 		"pt" "{fullred}[Concurso] {white}O tempo acabou, ninguém respondeu!"
 		"chi" "{fullred}[竞赛] {white}时间到，无人答对！"
+		"pl" "{fullred}[Konkurs] {white}Czas minął, brak odpowiedzi!"
+		"tr" "{fullred}[Yarışma] {white}Süre doldu, cevap yok!"
+		"it" "{fullred}[Concorso] {white}Tempo scaduto, nessuna risposta!"
+		"ua" "{fullred}[Конкурс] {white}Час вийшов, відповіді немає!"
+		"zho" "{fullred}[競賽] {white}時間到，沒有人答對！"
+		"cze" "{fullred}[Soutěž] {white}Čas vypršel, nikdo neodpověděl!"
 	}
 }
